@@ -122,3 +122,10 @@ chat-app
 Konflikty
 
 kilka osób zmienia utils.py lub server.py.
+
+
+elo żelo
+podział kto jest kim
+przemek 1 
+bartek 2
+michal 3
