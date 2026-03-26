@@ -129,3 +129,4 @@ podział kto jest kim
 przemek 1 
 bartek 2
 michal 3
+uisag FDgf ilsadhgsxaoi[d 
