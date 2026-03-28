@@ -30,6 +30,6 @@ def task_menu():
         print("Zapisz i wyjdz!")
     else:
         print("wprowaddz poprawna opcje")
-        
+
 if __name__ == "__main__":
     main()
