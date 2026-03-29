@@ -36,3 +36,14 @@ def attack(attacker, defender):
         print(attacker["name"], "hits", defender["name"], "for", finalDamage)
 
     defender["hp"] -= finalDamage
+
+
+def attack(attacker, target):
+    raw_damage = attacker.strength
+
+    armor_value = getattr(target, 'armor', 0)
+    final_damage = max(0, raw_damage - armor_value)
+
+    target.hp -= final_damage
+    print(f"{attacker.name} zadaje {final_damage} obrażeń (zablokowano {armor_value} przez pancerz).")
+    

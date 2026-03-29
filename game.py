@@ -40,3 +40,16 @@ def setDifficulty(level):
             "speed": 10,
             "pointsMultiplier": 2
         }
+
+class ScoreManager:
+    def __init__(self):
+        self.current_score = 0
+
+    def add_point(self, amount=10):
+        self.current_score += amount
+
+    def reset_score(self):
+        self.current_score = 0
+
+    def get_score(self):
+        return self.current_score
