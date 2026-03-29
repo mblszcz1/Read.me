@@ -34,8 +34,6 @@ def task_menu():
         print("Dane zapisane. Do widzenia!")
         break
     else:
-        print("Wprowadz poprawna opcje!")
-        
 if __name__ == "__main__":
     main()
     
