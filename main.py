@@ -17,19 +17,23 @@ def task_menu():
     choice = input("\nCo chcesz zrobic? ")
 
     if choice == "1":
-        print("Pokaz zadania!")
+        tasks.show_all(lista_zadan)
     elif choice == "2":
-        print("Dodaj zadania!")
+        nowe_zadanie = input("Tresc zadania: ")
+        tasks.add_task(lista_zadan, nowe_zadanie)
     elif choice == "3":
-        print("USUN zadania!")
+        idx = int(input("Numer zadania do usuniecia: "))
+        tasks.remove_task(lista_zadan, idx)
     elif choice == "4":
-        print("Pokaz zadania zrobione!")
+        tasks.filter_tasks(lista_zadan, True)
     elif choice == "5":
-        print("Pokaz zadania niezrobione!")
+        tasks.filter_tasks(lista_zadan, False)
     elif choice == "6":
-        print("Zapisz i wyjdz!")
+        # --- TWOJA GŁÓWNA ROLA (Osoba 2) ---
+        storage.save_tasks(lista_zadan)
+        print("Dane zapisane. Do widzenia!")
+        break
     else:
-        print("wprowaddz poprawna opcje")
-
 if __name__ == "__main__":
     main()
+    
