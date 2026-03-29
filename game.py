@@ -16,3 +16,5 @@ def snakeMovement():
         moveX, moveY = 10, 0
 
     return moveX, moveY
+
+#zadnie 3 - osoba 3
